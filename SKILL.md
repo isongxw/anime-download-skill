@@ -12,6 +12,7 @@ Search and download anime torrents from miobt.com. Zero-install via `uvx`.
 ```bash
 uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "KEYWORD"
 uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "KEYWORD" --download --index 0
+uvx --from git+https://github.com/isongxw/anicatch.git anicatch --url "https://miobt.com/show-xxx.html"
 uvx --from git+https://github.com/isongxw/anicatch.git anicatch --test
 ```
 
