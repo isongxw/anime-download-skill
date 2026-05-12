@@ -17,6 +17,7 @@ uvx --from git+https://github.com/isongxw/anicatch.git anicatch --test
 
 ## Tips
 
+- Results print directly to stdout — read the output, no JSON parsing needed
 - English keywords give broader results ("Demon Slayer" over "鬼灭之刃")
 - First run downloads ~33 packages into uv cache; subsequent runs are instant
 - Downloads use BitTorrent with DHT and public tracker fallback
