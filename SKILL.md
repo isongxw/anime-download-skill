@@ -13,42 +13,42 @@ Search and download anime torrents from miobt.com. Zero-install via `uvx`.
 
 `--seasons` — list all available seasons (current marked with ←)
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --seasons
+uvx anicatch --seasons
 ```
 
 `--season` — browse anime airing this season, grouped by day of week
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --season
+uvx anicatch --season
 ```
 
 `--season 2` — browse a specific season by index (use `--seasons` to find the index)
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --season 2
+uvx anicatch --season 2
 ```
 
 ### Search
 
 `--search "KEYWORD"` — search torrents by keyword, prints results to stdout
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "Demon Slayer"
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "鬼灭之刃"
+uvx anicatch --search "Demon Slayer"
+uvx anicatch --search "鬼灭之刃"
 ```
 
 ### Download
 
 `--download "URL"` — download torrent directly from a detail page URL (copy the link from search results)
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --download "https://miobt.com/show-xxx.html"
+uvx anicatch --download "https://miobt.com/show-xxx.html"
 ```
 
 `--search "KEYWORD" --download` — search and download the first result
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "Demon Slayer" --download --index 0
+uvx anicatch --search "Demon Slayer" --download --index 0
 ```
 
 `--season --download` — download the first anime from current season
 ```bash
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --season --download --index 3
+uvx anicatch --season --download --index 3
 ```
 
 ## Tips
