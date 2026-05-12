@@ -48,17 +48,19 @@ uvx anicatch --search "鬼灭之刃"
 
 ### Download
 
-`--download "URL"` — download torrent directly from a detail page URL (copy the link from search results)
+`--download "URL"` — download torrent directly from a detail page URL
 ```bash
 uvx anicatch --download "https://miobt.com/show-xxx.html"
+uvx anicatch --download "https://miobt.com/show-xxx.html" -o ~/Downloads
 ```
 
-`--search "KEYWORD" --download` — search and download the first result
+`--search "KEYWORD" --download` — search and download
 ```bash
 uvx anicatch --search "Demon Slayer" --download --index 0
+uvx anicatch --search "Demon Slayer" --download -o ~/Videos
 ```
 
-`--season --download` — download the first anime from current season
+`--season --download` — download from current season
 ```bash
 uvx anicatch --season --download --index 3
 ```
@@ -70,3 +72,4 @@ uvx anicatch --season --download --index 3
 - First run downloads ~33 packages into uv cache; subsequent runs are instant
 - Downloads use BitTorrent with DHT and public tracker fallback
 - When downloading from search results, copy the detail page URL and use `--download "URL"`
+- Use `-o <dir>` to specify a custom download directory
