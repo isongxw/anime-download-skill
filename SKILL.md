@@ -5,7 +5,19 @@ description: Use when the user asks to search anime torrents, download anime epi
 
 # AniCatch
 
-Search and download anime torrents from miobt.com. Zero-install via `uvx`.
+Search and download anime torrents from miobt.com.
+
+## Prerequisites
+
+Check if `uvx` is available. If not, install it first:
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Or use pipx as fallback
+pipx install anicatch && anicatch --search "KEYWORD"
+```
 
 ## Commands
 
