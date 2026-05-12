@@ -12,8 +12,10 @@ Search and download anime torrents from miobt.com. Zero-install via `uvx`.
 ```bash
 uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "KEYWORD"
 uvx --from git+https://github.com/isongxw/anicatch.git anicatch --search "KEYWORD" --download --index 0
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --url "https://miobt.com/show-xxx.html"
-uvx --from git+https://github.com/isongxw/anicatch.git anicatch --test
+uvx --from git+https://github.com/isongxw/anicatch.git anicatch --download "https://miobt.com/show-xxx.html"
+uvx --from git+https://github.com/isongxw/anicatch.git anicatch --seasons
+uvx --from git+https://github.com/isongxw/anicatch.git anicatch --season
+uvx --from git+https://github.com/isongxw/anicatch.git anicatch --season 1 --download --index 0
 ```
 
 ## Tips
@@ -22,3 +24,4 @@ uvx --from git+https://github.com/isongxw/anicatch.git anicatch --test
 - English keywords give broader results ("Demon Slayer" over "鬼灭之刃")
 - First run downloads ~33 packages into uv cache; subsequent runs are instant
 - Downloads use BitTorrent with DHT and public tracker fallback
+- `--season` without index defaults to current season; use `--seasons` to list all
